@@ -1,4 +1,13 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&family=Sriracha&display=swap');
+
+:root {
+--fonte1: verdana, geneva , tahoma , sans-serif;
+--fonte2: 'Passion One', sans-serif;
+--fonnt3:  'Sriracha', cursive;
+
+}
 
 *{
     margin: 0px;
@@ -9,7 +18,9 @@
 html, body {
 
     min-height: 100vh;
-    background-color: darkgray;
+    background-color: darkgrey;
+    font-family: var(--fonte1);
+    
 }
 
 
@@ -24,6 +35,8 @@ html, body {
 
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 10vw;
  }
 
  header > p {
@@ -48,6 +61,8 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonnt3);
+    font-size: 3,5vw;
 }
   
 section.normal{
@@ -61,7 +76,8 @@ section.imagem{
 }
 
 section.imagem > p {
-    width: 400px;
+   display: inline-block;
+   padding: 5px;
     background-color: rgba(0, 0, 0, 0.288);
 }
 
